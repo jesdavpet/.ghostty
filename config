@@ -1,0 +1,17 @@
+# My custom configuration for Ghostty
+#
+# SEE:  https://ghostty.org/docs/config/reference
+# TERM: ghostty +show-config --default --docs
+
+# Theme
+# SEE:  https://ghostty.org/docs/features/theme
+# TERM: ghostty +themes-list
+theme = light:Builtin Solarized Light,dark:Builtin Solarized Dark
+
+# Keybinding ctrl+space
+# SEE:  https://ghostty.org/docs/config/keybind
+# SEE:  https://github.com/ghostty-org/ghostty/blob/main/src/input/key.zig#L255
+keybind = ctrl+space>shift+backslash=new_split:left
+keybind = ctrl+space>backslash=new_split:right
+keybind = ctrl+space>shift+minus=new_split:up
+keybind = ctrl+space>minus=new_split:down
