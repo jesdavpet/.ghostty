@@ -11,7 +11,34 @@ theme = light:Builtin Solarized Light,dark:Builtin Solarized Dark
 # Keybinding ctrl+space
 # SEE:  https://ghostty.org/docs/config/keybind
 # SEE:  https://github.com/ghostty-org/ghostty/blob/main/src/input/key.zig#L255
+# TERM: ghostty +keybinds-list
+
+# Open a new split
 keybind = ctrl+space>shift+backslash=new_split:left
 keybind = ctrl+space>backslash=new_split:right
 keybind = ctrl+space>shift+minus=new_split:up
 keybind = ctrl+space>minus=new_split:down
+
+# Close the current surface (split -> tab -> window)
+keybind = ctrl+space>x=close_surface
+
+# Navigate between splits
+keybind = ctrl+space>h=goto_split:left
+keybind = ctrl+space>j=goto_split:down
+keybind = ctrl+space>k=goto_split:up
+keybind = ctrl+space>l=goto_split:right
+
+# Resize the current split
+keybind = ctrl+space>shift+h=resize_split:left,100
+keybind = ctrl+space>shift+j=resize_split:down,100
+keybind = ctrl+space>shift+k=resize_split:up,100
+keybind = ctrl+space>shift+l=resize_split:right,100
+
+# Equalize all of the splits in parent surface (tab -> window)
+keybind = ctrl+space>equal=equalize_splits
+
+# Zoom current split (toggles zoomed in/out)
+keybind = ctrl+space>z=toggle_split_zoom
+
+# Source (reload) this ghostty config file
+keybind = ctrl+space>s=reload_config
