@@ -5,42 +5,46 @@ This repository contains the configuration files I use to customize the [`ghostt
 
 ## Keybindings
 
-Conveniently, `ghostty` includes the features that I previously relied on the [`tmux`](https://github.com/tmux/tmux) terminal multiplexer to provide. I have ported my commonly used `tmux` keybindings for creating, resizing, and arranging splits in this config -- all of which use the `Ctrl+Space` key combination as a leader.
+Conveniently, `ghostty` includes the features that I previously relied on the [`tmux`](https://github.com/tmux/tmux) terminal multiplexer to provide.
+
+I have ported my commonly used `tmux` keybindings for creating, resizing, and arranging splits in this config -- all of which use the `Ctrl+Space` key combination as `<Leader>`.
+
+These keybindings are similar to [`LazyVim` default keymaps](https://www.lazyvim.org/keymaps), because I am also lazy, and I don't want to memorize more than I have to.
 
 ### Create new splits
 
-| Keybinding        | Command         |
-|:-----------------:|:---------------:|
-| `Ctrl+Space` `\`  | New split right |
-| `Ctrl+Space` `\|` | New split left  |
-| `Ctrl+Space` `-`  | New split down  |
-| `Ctrl+Space` `_`  | New split up    |
+| Keybinding         | Command         |
+|:------------------:|:---------------:|
+| `<Leader>` `\|`    | New split right |
+| `<Leader>` `\\\`   | New split left  |
+| `<Leader>` `-`     | New split down  |
+| `<Leader>` `_`     | New split up    |
 
 ### Navigate between splits
 
-| Keybinding        | Command           |
-|:-----------------:|:-----------------:|
-| `Ctrl+Space` `h`  | Go to split right |
-| `Ctrl+Space` `j`  | Go to split left  |
-| `Ctrl+Space` `k`  | Go to split down  |
-| `Ctrl+Space` `l`  | Go to split up    |
-| `Ctrl+Space` `z`  | Zoom spli in/out  |
+| Keybinding           | Command           |
+|:--------------------:|:-----------------:|
+| `<Leader>` `→`       | Go to split right |
+| `<Leader>` `←`       | Go to split left  |
+| `<Leader>` `↓`       | Go to split down  |
+| `<Leader>` `↑`       | Go to split up    |
+| `<Leader>` `z`       | Zoom split in/out |
 
 ### Resize current split
 
-| Keybinding        | Command             |
-|:-----------------:|:-------------------:|
-| `Ctrl+Space` `H`  | Resize split right  |
-| `Ctrl+Space` `J`  | Resize split left   |
-| `Ctrl+Space` `K`  | Resize split down   |
-| `Ctrl+Space` `L`  | Resize split up     |
-| `Ctrl+Space` `=`  | Equalize all splits |
+| Keybinding             | Command             |
+|:----------------------:|:-------------------:|
+| `<Leader>` `Shift` `→` | Resize split right  |
+| `<Leader>` `Shift` `←` | Resize split left   |
+| `<Leader>` `Shift` `↓` | Resize split down   |
+| `<Leader>` `Shift` `↑` | Resize split up     |
+| `<Leader>` `=`         | Equalize all splits |
 
 ### Close current surface (split → tab → window)
 
 | Keybinding        | Command               |
 |:-----------------:|:---------------------:|
-| `Ctrl+Space` `x`  | Close current surface |
+| `<Leader>` `x`    | Close current surface |
 
 
 ## Installation
@@ -52,7 +56,7 @@ Conveniently, `ghostty` includes the features that I previously relied on the [`
 ### Clone the files in this repository for your local config
 
 ```bash
-git clone https://github.com/jesdavpet/ghostty.git ~/.config/ghostty
+git clone https://github.com/jesdavpet/.ghostty.git ~/.config/ghostty
 ```
 
 ## Updating
@@ -67,4 +71,4 @@ cd ~/.config/ghostty && git checkout origin/trunk
 
 | Keybinding        | Command                        |
 |:-----------------:|:------------------------------:|
-| `Ctrl+Space` `s`  | Relaod config from source file |
+| `<Leader>` `s`    | Relaod config from source file |
