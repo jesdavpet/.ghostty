@@ -16,7 +16,7 @@ These keybindings are similar to [`LazyVim` default keymaps](https://www.lazyvim
 | Keybinding         | Command         |
 |:------------------:|:---------------:|
 | `<Leader>` `\|`    | New split right |
-| `<Leader>` `\\\`   | New split left  |
+| `<Leader>` `\`   | New split left  |
 | `<Leader>` `-`     | New split down  |
 | `<Leader>` `_`     | New split up    |
 
